@@ -14,19 +14,23 @@
 		5D23CEB3139573E700E2E141 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D23CEB1139573E700E2E141 /* MainMenu.xib */; };
 		5D23CEB6139573E700E2E141 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 5D23CEB5139573E700E2E141 /* rb_main.rb */; };
 		5D23CEB8139573E700E2E141 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 5D23CEB7139573E700E2E141 /* AppDelegate.rb */; };
+		5D23CEC213957C7F00E2E141 /* SerialController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 5D23CEC113957C7F00E2E141 /* SerialController.rb */; };
+		5D23CEC41395864700E2E141 /* Serial.rb in Resources */ = {isa = PBXBuildFile; fileRef = 5D23CEC31395864700E2E141 /* Serial.rb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5D23CE9E139573E700E2E141 /* Serial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Serial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D23CEA2139573E700E2E141 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		5D23CEA4139573E700E2E141 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = System/Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
-		5D23CEA9139573E700E2E141 /* Serial-Info.plist */ = {isa = PBXFileReference; path = "Serial-Info.plist"; sourceTree = "<group>"; };
+		5D23CEA9139573E700E2E141 /* Serial-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Serial-Info.plist"; sourceTree = "<group>"; };
 		5D23CEAB139573E700E2E141 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5D23CEAD139573E700E2E141 /* Serial-Prefix.pch */ = {isa = PBXFileReference; path = "Serial-Prefix.pch"; sourceTree = "<group>"; };
+		5D23CEAD139573E700E2E141 /* Serial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Serial-Prefix.pch"; sourceTree = "<group>"; };
 		5D23CEAE139573E700E2E141 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5D23CEB2139573E700E2E141 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		5D23CEB5139573E700E2E141 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		5D23CEB7139573E700E2E141 /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+		5D23CEC113957C7F00E2E141 /* SerialController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = SerialController.rb; sourceTree = "<group>"; };
+		5D23CEC31395864700E2E141 /* Serial.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Serial.rb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				5D23CEB7139573E700E2E141 /* AppDelegate.rb */,
+				5D23CEC5139586B400E2E141 /* Controllers */,
+				5D23CEC6139586C500E2E141 /* Models */,
 				5D23CEB0139573E700E2E141 /* Resources */,
 				5D23CEB4139573E700E2E141 /* Other Sources */,
 				5D23CEA8139573E700E2E141 /* Supporting Files */,
@@ -104,6 +110,22 @@
 				5D23CEB5139573E700E2E141 /* rb_main.rb */,
 			);
 			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		5D23CEC5139586B400E2E141 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5D23CEC113957C7F00E2E141 /* SerialController.rb */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		5D23CEC6139586C500E2E141 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5D23CEC31395864700E2E141 /* Serial.rb */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +199,8 @@
 				5D23CEB3139573E700E2E141 /* MainMenu.xib in Resources */,
 				5D23CEB6139573E700E2E141 /* rb_main.rb in Resources */,
 				5D23CEB8139573E700E2E141 /* AppDelegate.rb in Resources */,
+				5D23CEC213957C7F00E2E141 /* SerialController.rb in Resources */,
+				5D23CEC41395864700E2E141 /* Serial.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +252,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -242,6 +267,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
@@ -256,6 +282,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Serial/Serial-Prefix.pch";
 				INFOPLIST_FILE = "Serial/Serial-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -272,6 +299,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Serial/Serial-Prefix.pch";
 				INFOPLIST_FILE = "Serial/Serial-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
